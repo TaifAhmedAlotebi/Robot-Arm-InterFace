@@ -37,6 +37,19 @@
 <input type="range" min="0" max="180" value="0" class="slider" id="myRange6" name="value6">
 <p>Value: <span id="value6"></span></p>
 </div>
+        <script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "6147cf04-58b0-4abe-974f-8b1c41c334b4", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "5524befe-7e96-42af-9c17-382e4b8ffce4", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
 <input type="submit" value = "SAVE" name = SAVE  style="font-size: 40px; background: #89AB(117, 252, 117); border-radius: 50px;" > 
 <input type="submit" value = "RUN" name = RUN  style="font-size: 40px; background: #89AB; border-radius: 50px;" >
 <script src="ROBOTARM.js"></script>
